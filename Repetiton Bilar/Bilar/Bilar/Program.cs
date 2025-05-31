@@ -7,6 +7,28 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 
+/*
+ 
+1. Skapa ett objekt av Bil-klassen. Bilen ska ha registreringsnumret ABC123, tillverkaren "Volvo", årtalet 1991 samt vara obesiktad. Var noga med att se till hur konstruktorn är uppbyggd!
+
+2. Skriv ut bilen genom att kalla på dess ToString-metod.
+
+3. Aj då, vi skrev visst fel årtal. Ändra objektets årtal till 1997 och skriv ut det igen.
+
+4. Skapa en bil till, med valfria värden. Jämför de två bilarnas årtal och skriv ut den som är äldst.
+
+I andra steget går vi lite längre. Nu börjar vi bygga ett program kring den här klassen.
+
+1. Skapa en menyloop och en menystruktur, så att användaren kan starta programmet och stänga av det. 
+
+2. I det första menyvalet ska användaren kunna registrera en bil. De ska kunna skriva in registreringsnummer, tillverkare, årtal och huruvida bilen är besiktad. Felhantera utförligt; det finns många steg som kan gå fel! Bilen ska sedan sparas i en gemensam Bil-lista. För att bilen ska kunna registreras i en lista behöver vi en lista (helst utanför huvudloopen) som Bil-objekt kan sparas i.
+
+3. I det andra menyvalet, gör så att samtliga registrerade bilar (i Bil-listan) kan skrivas ut, samt ett felmeddelande om inga bilar är registrerade.
+
+4. (Svår) Gör ett menyval som gör att användaren kan slumpa fram ett valfritt antal bilar som läggs till i listan. Bilarna ska ha ett registreringsnummer (tre bokstäver, sen tre siffror), en tillverkare, ett giltigt årtal och vara besiktad (eller inte). Användaren ska kunna slumpa fram ett antal bilar som sparas i en lista. Säger användaren 5, ska 5 bilar slumpas fram och sparas i listan.
+
+ */
+
 
 
 class Bil
@@ -40,6 +62,7 @@ class Bil
     }
 }
 
+//Below This is my own Code
 class Program
 {
     static void Main(string[] args)
