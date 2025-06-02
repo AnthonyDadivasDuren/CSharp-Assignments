@@ -10,7 +10,7 @@ using System.Threading.Tasks;
  */
 namespace Övning_Bokhyllan
 {
-    class Bok
+    abstract class Bok
     {
         // Egenskap för boktitel
         public string Titel { get; set; }
@@ -35,10 +35,7 @@ namespace Övning_Bokhyllan
         }
 
         // metod för att visa bok info
-        public virtual void VisaInfo()
-        {
-            // skriver ut titel, författare och typ
-            Console.WriteLine($"\n\t\"{Titel}\" av {Författare}, ( {Typ}, utgiven år {År} )"); 
-        }
+        public abstract void VisaInfo();
+       
     }
 }

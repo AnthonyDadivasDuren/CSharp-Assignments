@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,12 @@ namespace Övning_Bokhyllan
         {
             
             
+        }
+        
+        // överskriver basklassens visa info
+        public override void VisaInfo()
+        {
+            Console.WriteLine($"\n\t\"{Titel}\" av {Författare}, utgiven {År} ( {Typ} )");
         }
     }
 }

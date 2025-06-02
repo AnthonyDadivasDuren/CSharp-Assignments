@@ -78,25 +78,35 @@ namespace Övning_Bokhyllan
             }
 
             Console.Clear();
+
+            // Frågar efter utgivnings år
+            Console.WriteLine("\n\tVilket är utgivningsåret för boken");
+            // sparar input som en string
+            string input = Console.ReadLine();
+
+            //variabel för år
+            int år;
+
+            // försöker konvertera stringen till ett heltal
+            bool lyckades = int.TryParse(input, out år);
+
+            // Kontrollerar om konvertereringen misslyckades eller om året är ogiltigt
+            // ogiltiga årtal är år som är större än året vi är i nu eller negativa år 
+            // finns riktigt gamla böcker så lämnade lägsta till år 0 pga d
+            if (!lyckades || år > DateTime.Now.Year || år < 0)
+            {
+                //felmeddelande och avslutar metoden tidigt
+                ErrorMessage("\n\tOgilitgt årtal, Boken läggs inte till");
+                return;
+
+            }
+
+            Console.Clear();
             // Frågar om Bok typ
             Console.WriteLine("\n\tTyp av bok:[1] Roman [2] Tidskrift [3] Novellsamling");
             string typVal = Console.ReadLine();
 
-            Console.Clear();
-
-            Console.WriteLine("\n\tVilket är utgivningsåret för boken");
-            string input = Console.ReadLine();
-
-            int år;
-
-            bool lyckades = int.TryParse(input, out år);
-
-            if (!lyckades || år > DateTime.Now.Year)
-            {
-                ErrorMessage("\n\tOgilitgt årtal, boken läggs inte till");
-                return ;
-
-            }
+       
             
 
             Bok nyBok;  // Gör en ny variabel  för nya boken
