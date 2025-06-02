@@ -1,4 +1,9 @@
 ﻿
+/*
+ * Insåg i efter hand att jag hade kunnat loopa vid ogiltiga svar då det blev lite jobbigt att börja om varje gång det blev nåt fel
+ * 
+ */
+
 namespace Övning_Bokhyllan
 {
     class Program
