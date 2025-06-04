@@ -34,8 +34,13 @@ namespace Övning_Bokhyllan
             År = år;
         }
 
-        // metod för att visa bok info
-        public abstract void VisaInfo();
-       
+      
+
+        // överskriver basklassens visa info
+        public virtual void VisaInfo()
+        {
+            Console.WriteLine($"\n\t\"{Titel}\" av {Författare}, utgiven {År} ( {Typ} )");
+        }
+
     }
 }

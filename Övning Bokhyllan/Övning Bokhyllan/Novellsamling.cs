@@ -19,10 +19,6 @@ namespace Övning_Bokhyllan
         }
 
 
-        //överskriver basklassens visainfo 
-        public override void VisaInfo()
-        {
-            Console.WriteLine($"\n\t\"{Titel}\" av {Författare}, utgiven {År} ( {Typ} )");
-        }
+  
     }
 }
