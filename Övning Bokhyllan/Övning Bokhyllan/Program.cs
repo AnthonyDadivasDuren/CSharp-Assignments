@@ -48,7 +48,7 @@ namespace Övning_Bokhyllan
 
 
                     default:    // felhantering om användaren ger ett ogiltigt svar
-                        ErrorMessage("\n\tOgilitgt val försök igen");
+                        ErrorMessage("\n\tOgiltigt val försök igen");
                         break;
                 }
 
@@ -113,6 +113,8 @@ namespace Övning_Bokhyllan
             bokLista.Add(nyBok);
 
             InfoMessage("\n\tBoken har lagts till.");
+
+            return;
 
 
         }
